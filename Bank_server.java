@@ -160,8 +160,8 @@ class BankServer extends Thread {
 	}
 	
 	private void sendEmail() throws MessagingException {
-		String fromUser = "samplemail5463@gmail.com";  		
-		String fromUserPassword = "123abcd890";  		
+		String fromUser = "samplemail";  		
+		String fromUserPassword = "password";  		
 		String emailHost = "smtp.gmail.com";
 		Transport transport = newSession.getTransport("smtp");
 		transport.connect(emailHost, fromUser, fromUserPassword);
